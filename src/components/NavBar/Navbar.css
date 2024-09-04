@@ -1,0 +1,198 @@
+/* .navbar{
+    background-color: rgba(0, 0, 0, 0.653);
+    height: 5rem;
+    width: 100vw;
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 3;
+    top: 0
+}
+
+.desktopMenuListItem{
+    margin: 1rem;
+    cursor: pointer;
+    
+}
+.desktopMenuListItem:hover{
+    color: goldenrod;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid goldenrod ;
+    
+
+}
+.desktopMenuImg{
+    object-fit: cover;
+    height: 1.4rem;
+    width: 1.5rem;
+    margin: 1rem;
+}
+.desktopMenuBtn{
+    border: none;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.9rem;
+    border-radius: 2rem;
+}
+
+
+
+.logo{
+    height: 5rem;
+    width: 10rem;
+    object-fit: cover;
+       
+} */
+
+
+:root {
+  font-size: 16px; /* 1rem = 16px */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.653);
+  height: 5rem;
+  width: 100vw;
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  z-index: 3;
+  top: 0;
+  transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+.navbar:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1rem 3rem;
+}
+
+.desktopMenuListItem {
+  margin: 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease, border-bottom 0.3s ease, padding-bottom 0.3s ease;
+}
+
+.desktopMenuListItem:hover {
+  color: goldenrod;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid goldenrod;
+}
+
+.desktopMenuImg {
+  object-fit: cover;
+  height: 1.4rem;
+  width: 1.5rem;
+  margin: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.desktopMenuImg:hover {
+  transform: scale(1.2);
+}
+
+.desktopMenuBtn {
+  border: none;
+  background-color: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.9rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.desktopMenuBtn:hover {
+  color: goldenrod;
+  background-color: #f1f1f1;
+}
+
+.logo {
+  height: 5rem;
+  width: 10rem;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: rotate(5deg);
+}
+
+.active {
+  color: goldenrod;
+  border-bottom: 3px solid goldenrod;
+  padding-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      height: auto;
+      padding: 1rem;
+      transition: padding 0.3s ease;
+  }
+
+  .desktopMenuListItem {
+      margin: 0.5rem;
+      font-size: 0.875rem;
+  }
+
+  .desktopMenuImg {
+      height: 1.2rem;
+      width: 1.3rem;
+      margin: 0.5rem;
+  }
+
+  .desktopMenuBtn {
+      padding: 0 0.7rem;
+  }
+
+  .logo {
+      height: 4rem;
+      width: 8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+      padding: 0.5rem;
+  }
+
+  .desktopMenuListItem {
+      margin: 0.3rem;
+      font-size: 0.75rem;
+  }
+
+  .desktopMenuImg {
+      height: 1rem;
+      width: 1.1rem;
+      margin: 0.3rem;
+  }
+
+  .desktopMenuBtn {
+      padding: 0 0.5rem;
+  }
+
+  .logo {
+      height: 3rem;
+      width: 6rem;
+  }
+}

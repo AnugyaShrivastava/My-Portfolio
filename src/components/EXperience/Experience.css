@@ -1,0 +1,80 @@
+:root {
+    font-size: 16px; /* 1rem = 16px */
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .experience-container {
+    padding: 2rem;
+    background-color: rgba(128, 128, 128, 0.16);
+    color: #333;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 8rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  
+  .exTitle {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    /* padding-top: 3rem; */
+    margin-bottom: 1.5rem;
+    color: #f1f1f1;
+  }
+  
+  .job {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #f1f1f1;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .job-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .job-details p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    .title {
+      font-size: 1.5rem;
+    }
+  
+    .job-details h3 {
+      font-size: 1.2rem;
+    }
+  
+    .job-details p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .experience-container {
+      padding: 1rem;
+    }
+  
+    .title {
+      font-size: 1.2rem;
+    }
+  
+    .job-details h3 {
+      font-size: 1rem;
+    }
+  
+    .job-details p {
+      font-size: 0.8rem;
+    }
+  }
+  

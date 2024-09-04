@@ -1,0 +1,122 @@
+#skills {
+    overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 4rem;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.skillTitle {
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+    animation: slideInFromLeft 1s ease-out;
+}
+
+.skillDesc {
+    font-weight: 300;
+    font-size: 1rem;
+    max-width: 63rem;
+    padding: 0 2rem;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.me {
+    color: goldenrod;
+}
+
+.skillBars {
+    margin: 1.5rem;
+    width: 100vw;
+    max-width: 80%;
+    text-align: left;
+}
+
+.skillBar {
+    display: flex;
+    margin: 1rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    /* border: 2px solid red; */
+    background-color: rgba(128, 128, 128, 0.16);
+    animation: slideInFromTop 0.8s ease-in-out forwards;
+    opacity: 0; /* Initial opacity set to 0 for animation effect */
+}
+
+.skillBarImg {
+    object-fit: cover;
+    height: 5rem;
+    width: 6rem;
+    margin-right: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.skillBarImg:hover {
+    transform: scale(1.1);
+}
+
+.skillBarText>p {
+    font-size: 0.9rem;
+    font-weight: 200;
+    transition: color 0.3s ease;
+}
+
+.skillBarText>p:hover {
+    color: goldenrod;
+}
+
+@media screen and (max-width: 720px) {
+    .skillBarText>p {
+        font-size: 1vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .skillBarText>p {
+        font-size: 1.6vw;
+    }
+    .skillBarImg {
+        height: 5.25rem;
+        width: 5.25rem;
+    }
+    .skillBartext>h2 {
+        font-size: 3vw;
+    }
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

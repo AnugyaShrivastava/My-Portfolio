@@ -1,0 +1,101 @@
+:root {
+    font-size: 16px; /* 1rem = 16px */
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .skills-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.16);
+    color: #333;
+    margin-top: 8rem;
+  }
+  
+  .langTitle {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: #f1f1f1;
+  }
+  
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .skill {
+    width: 45%;
+    min-width: 250px;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  }
+  
+  .skill-name {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .skill-bar {
+    background-color: #f1f1f1;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .skill-bar-inner {
+    background-color: goldenrod;
+    height: 1rem;
+    width: 0;
+    border-radius: 0.5rem;
+    transition: width 1s ease-in-out;
+  }
+  
+  .skill-percentage {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2rem;
+    }
+  
+    .skill-name {
+      font-size: 1.25rem;
+    }
+  
+    .skill-percentage {
+      font-size: 0.875rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .skills-container {
+      padding: 1rem;
+    }
+  
+    .title {
+      font-size: 1.5rem;
+    }
+  
+    .skill-name {
+      font-size: 1rem;
+    }
+  
+    .skill-percentage {
+      font-size: 0.75rem;
+    }
+  }
+  

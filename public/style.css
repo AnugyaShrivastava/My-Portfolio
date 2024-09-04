@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background: transparent;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+body{
+   background-color: black;
+    color: white;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+   
+   
+}
+

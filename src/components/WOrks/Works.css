@@ -1,0 +1,114 @@
+:root {
+    font-size: 16px; /* 1rem = 16px */
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .portfolio-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    margin-top: 4rem;
+  }
+  
+  .myTitle {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    color: #fff;
+  }
+  
+  .description {
+    font-weight: 300;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    margin-top: 1.5rem;
+  }
+  
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .project-card {
+    background-color: rgba(128, 128, 128, 0.16);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 30%;
+    min-width: 250px;
+    transition: transform 0.3s;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .project-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .project-name {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+  
+  .project-link {
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #000;
+    background-color: #f1f1f1;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s;
+  }
+  
+  .project-link:hover {
+    background-color: goldenrod;
+    color: #f1f1f1;
+  }
+  
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2rem;
+    }
+  
+    .description {
+      font-size: 1rem;
+    }
+  
+    .project-card {
+      width: 45%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .portfolio-container {
+      padding: 1rem;
+    }
+  
+    .title {
+      font-size: 1.5rem;
+    }
+  
+    .description {
+      font-size: 0.875rem;
+    }
+  
+    .project-card {
+      width: 100%;
+    }
+  }
+  
